@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomC_Compiler_Project", "AtomC_Compiler_Project\AtomC_Compiler_Project.csproj", "{23FDFDBD-18E2-4C78-905E-D119536379AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomC_Compiler_Project.Core", "AtomC_Compiler_Project.Core\AtomC_Compiler_Project.Core.csproj", "{23FDFDBD-18E2-4C78-905E-D119536379AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomC_Compiler_Project.Tests", "AtomC_Compiler_Project.Tests\AtomC_Compiler_Project.Tests.csproj", "{81DA2D26-547F-4D8C-BF47-3ED0028A3120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomC_Compiler_Project.CLI", "AtomC_Compiler_Project.CLI\AtomC_Compiler_Project.CLI.csproj", "{72B5AB5B-9EF4-41A7-82DC-EEBF52C1BEB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +16,13 @@ Global
 		{23FDFDBD-18E2-4C78-905E-D119536379AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23FDFDBD-18E2-4C78-905E-D119536379AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23FDFDBD-18E2-4C78-905E-D119536379AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DA2D26-547F-4D8C-BF47-3ED0028A3120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DA2D26-547F-4D8C-BF47-3ED0028A3120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DA2D26-547F-4D8C-BF47-3ED0028A3120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DA2D26-547F-4D8C-BF47-3ED0028A3120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B5AB5B-9EF4-41A7-82DC-EEBF52C1BEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B5AB5B-9EF4-41A7-82DC-EEBF52C1BEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B5AB5B-9EF4-41A7-82DC-EEBF52C1BEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B5AB5B-9EF4-41A7-82DC-EEBF52C1BEB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
