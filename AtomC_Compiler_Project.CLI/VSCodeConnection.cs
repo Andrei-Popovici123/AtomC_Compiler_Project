@@ -1,6 +1,6 @@
 namespace AtomC_Compiler_Project.CLI;
 
-public class VSCodeConnection
+public class VsCodeConnection
 {
     private static readonly string[] SupportedExtensions=  { ".atomc", ".c" ,".txt"};
 
@@ -17,14 +17,5 @@ public class VSCodeConnection
             Environment.Exit(1);
         }
         return File.ReadAllText(sourceFile);
-    }
-    static void Main()
-    {
-        string code = VSCodeConnection.GetSourceCode();
-
-        Console.WriteLine("=== AtomC Source ===");
-        Console.WriteLine(code);
-        Console.WriteLine("====================");
-
     }
 }

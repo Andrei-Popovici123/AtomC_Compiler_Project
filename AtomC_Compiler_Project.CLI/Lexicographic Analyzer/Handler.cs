@@ -1,4 +1,4 @@
-﻿namespace AtomC_Compiler_Project.Core.Lexicographic_Analyzer;
+﻿namespace AtomC_Compiler_Project.CLI.Lexicographic_Analyzer;
 
 
 public enum TokenCode
