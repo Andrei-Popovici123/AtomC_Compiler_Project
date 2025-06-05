@@ -5,16 +5,65 @@ public enum TokenCode
 {
     Id,
     End,
+
+    // Keywords
     Break,
-    
+    Char,
+    Double,
+    Else,
+    For,
+    If,
+    Integer,
+    Return,
+    Struct,
+    Void,
+    While,
+    True,
+    False,
+
+    // Constants
+    CtInt,
+    CtReal,
+    CtChar,
+    CtString,
+
+    // Delimiters
+    Comma,
+    Semicolon,
+    LPar,
+    RPar,
+    LBracket,
+    RBracket,
+    LAcc,
+    RAcc,
+
+    // Operators
+    Add,
+    Sub,
+    Mul,
+    Div,
+    Dot,
+    And,
+    Or,
+    Not,
+    Assign,
+    Equal,
+    Noteq,
+    Less,
+    Lesseq,
+    Greater,
+    Greatereq,
+
+    // Special
+    Invalid
 }
 public class Token
 {
     public TokenCode Code { get; set; }
-    public object Value { get; set; }
+    public string Value { get; set; }
     public int Line { get; set; }
 
-    public Token(TokenCode code, object value, int line)
+    public Token(TokenCode code, string value, int line)
     {
         Code = code;
         Value = value;
@@ -25,12 +74,18 @@ public class Handler
 {
     
     public List<Token> TokenList { get;  }= new List<Token>();
-    public int Line { get; set; } = 1;
+    private int Line { get; set; } = 1;
 
-    public Token AddToken(TokenCode code, object value)
+    public Token AddToken(TokenCode code, string value)
     {   Token token = new Token(code, value, Line);
         TokenList.Add(token);
         return token;
+    }
+
+    public int IncrementLine()
+    {
+        Line++;
+        return Line;
     }
 
     public void Error(string message)
@@ -44,4 +99,5 @@ public class Handler
         Console.Error.WriteLine($"Error at line {token.Line}: {message}");
         Environment.Exit(-1);
     }
+    
 }
