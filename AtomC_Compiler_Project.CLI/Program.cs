@@ -12,8 +12,7 @@ public class Program
         Console.WriteLine(code);
         Console.WriteLine("==================");
         Lexer lex = new Lexer(code);
-        lex.GetNextToken();
-        lex.GetNextToken();
+        lex.TokenizeAll();
         lex.PrintAllTokens();
         
 

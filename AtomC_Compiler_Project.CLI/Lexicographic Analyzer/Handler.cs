@@ -5,22 +5,57 @@ public enum TokenCode
 {
     Id,
     End,
+
+    // Keywords
     Break,
-    Invalid,
     Char,
     Double,
-    Integer,
     Else,
+    For,
     If,
+    Integer,
     Return,
+    Struct,
+    Void,
+    While,
     True,
     False,
-    For,
-    While,
-    Void,
-    Equal,
+
+    // Constants
+    CtInt,
+    CtReal,
+    CtChar,
+    CtString,
+
+    // Delimiters
+    Comma,
+    Semicolon,
+    LPar,
+    RPar,
+    LBracket,
+    RBracket,
+    LAcc,
+    RAcc,
+
+    // Operators
+    Add,
+    Sub,
+    Mul,
+    Div,
+    Dot,
+    And,
+    Or,
+    Not,
     Assign,
-    
+    Equal,
+    Noteq,
+    Less,
+    Lesseq,
+    Greater,
+    Greatereq,
+
+    // Special
+    Invalid
 }
 public class Token
 {
@@ -64,4 +99,5 @@ public class Handler
         Console.Error.WriteLine($"Error at line {token.Line}: {message}");
         Environment.Exit(-1);
     }
+    
 }
